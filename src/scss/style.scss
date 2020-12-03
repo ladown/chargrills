@@ -1,0 +1,13 @@
+@import './libs/bootstrap-reboot.min';
+
+@import './base/variables';
+@import './base/mixins';
+
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@import './blocks/media';
