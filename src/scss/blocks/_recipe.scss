@@ -1,0 +1,44 @@
+.recipe {
+  min-height: 800px;
+  background: url('../img/recipe/recipe_bg.png') center (center/cover) no-repeat;
+  &__header {
+    padding-top: 203px;
+    font-family: RF Rufo;
+    font-weight: 7000;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__subheader {
+    display: block;
+    margin: 66px auto;
+    margin-bottom: 0;
+    width: 553px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__btn {
+    display: block;
+    margin: 140px auto;
+    margin-bottom: 0;
+    width: 297px;
+    height: 65px;
+    background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+    border-radius: 35px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}

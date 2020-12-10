@@ -10,7 +10,7 @@ const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const del = require('del');
-const newer = require('newer');
+const newer = require('gulp-newer');
 
 const dist = './dist/';
 
@@ -32,7 +32,7 @@ gulp.task('html', function () {
 
 gulp.task('styles', function () {
   return gulp
-    .src('./src/scss/*.+(scss|sass|css)')
+    .src('./src/scss/**/*.+(scss|sass|css)')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
     .pipe(rename({ suffix: '.min', prefix: '' }))
@@ -41,17 +41,17 @@ gulp.task('styles', function () {
     .pipe(browsersync.stream());
 });
 
+// gulp.task('cleanimg', function () {
+//   return del('./dist/img/**/*', { force: true });
+// });
+
 gulp.task('images', function () {
   return gulp
     .src('./src/img/**/*')
-    .pipe(gulp.dest(newer(`${dist}/img/`)))
+    .pipe(newer('./dist/img/'))
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img/'))
     .pipe(browsersync.stream());
-});
-
-gulp.task('cleanimg', function () {
-  return del('./dist/img/**/*', { force: true });
 });
 
 gulp.task('icons', function () {
@@ -104,15 +104,12 @@ gulp.task('build-js', () => {
 
 gulp.watch('./src/index.html', gulp.parallel('html'));
 gulp.watch('./src/js/**/*.js', gulp.parallel('build-js'));
-gulp.watch('./src/scss/*.+(scss|sass|css)', gulp.parallel('styles'));
+gulp.watch('./src/scss/**/*.+(scss|sass|css)', gulp.parallel('styles'));
 gulp.watch('./src/img/**/*').on('all', gulp.parallel('images'));
-gulp.watch('./dist/img/**/*').on('all', gulp.parallel('cleanimg'));
+// gulp.watch('./dist/img/**/*').on('all', gulp.parallel('cleanimg'));
 gulp.watch('./src/icons/**/*').on('all', gulp.parallel('icons'));
 gulp.watch('./src/fonts/**/*').on('all', gulp.parallel('fonts'));
-gulp.task(
-  'build',
-  gulp.parallel('html', 'build-js', 'styles', 'images', 'cleanimg', 'icons', 'fonts'),
-);
+gulp.task('build', gulp.parallel('html', 'build-js', 'styles', 'images', 'icons', 'fonts'));
 
 gulp.task('build-prod-js', () => {
   return gulp

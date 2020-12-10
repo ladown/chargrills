@@ -1,4 +1,5 @@
 @import './libs/bootstrap-reboot.min';
+@import './libs/fonts';
 
 @import './base/variables';
 @import './base/mixins';
@@ -9,5 +10,35 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+.divider {
+  border: 3px solid #f3652e;
+}
+
+.price__circles span.active,
+.othprice__circles span.active,
+.popular__circles span.active {
+  background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+}
+
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/advantages';
+@import './blocks/catalog';
+@import './blocks/footer';
+@import './blocks/price';
+@import './blocks/othprice';
+@import './blocks/slider';
+@import './blocks/questions';
+@import './blocks/dealer';
+@import './blocks/structure';
+@import './blocks/popular';
+@import './blocks/complex';
+@import './blocks/recipe';
 
 @import './blocks/media';

@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'RFRufo';
+  src: url('RFRufo-Bold.eot');
+  src: local('RF Rufo Bold'), local('RFRufo-Bold'),
+    url('../fonts/RFRufo-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RFRufo-Bold.woff2') format('woff2'),
+    url('../fonts/RFRufo-Bold.woff') format('woff'),
+    url('../fonts/RFRufo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Regular'), local('Muller-Regular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff'),
+    url('../fonts/MullerRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RFRufo';
+  src: local('RF Rufo Semibold'), local('RF-Rufo-Semibold'),
+    url('../fonts/RFRufo-Semibold.woff2') format('woff2'),
+    url('../fonts/RFRufo-Semibold.woff') format('woff'),
+    url('../fonts/RFRufo-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Light'), local('Muller-Light'),
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff'),
+    url('../fonts/MullerLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

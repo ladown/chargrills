@@ -1,0 +1,26 @@
+.structure {
+  padding: 70px 340px 180px 340px;
+  &__header {
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__subheader {
+    margin-top: 53px;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 157%;
+    text-align: center;
+    color: #000000;
+  }
+  &__img {
+    display: block;
+    margin: 58px auto;
+    margin-bottom: 0;
+  }
+}

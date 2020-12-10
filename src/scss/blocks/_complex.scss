@@ -1,0 +1,60 @@
+.complex {
+  min-height: 802px;
+  background: url('../img/complex/complex_bg.png') center (center/cover) no-repeat;
+  &__header {
+    padding-top: 256px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__subheader {
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+    margin-bottom: 0px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__additional {
+    padding: 89px 0px 100px 0px;
+    &-descr {
+      display: block;
+      margin: 0 auto;
+      width: 568px;
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 157%;
+      text-align: center;
+      color: #000000;
+    }
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 57px auto;
+      margin-bottom: 0px;
+      width: 297px;
+      height: 65px;
+      background-color: #fff;
+      border: 2px solid #000000;
+      border-radius: 35px;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.popular {
+  padding: 100px 78px 112px 78px;
+  background: #eeeeee;
+  &__header {
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__subheader {
+    margin-top: 38px;
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    text-align: center;
+    color: #000000;
+  }
+  &__items {
+    margin-top: 108px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(437px, auto));
+    justify-content: space-between;
+  }
+  &__item {
+    width: 437px;
+    background: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    height: 276px;
+  }
+  &__title {
+    margin: 22px 0px 0px 28px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 104.5%;
+    color: #f3652e;
+  }
+  &__price {
+    margin: 15px 0px 0px 28px;
+    font-family: Muller;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: #898989;
+  }
+  &__spec {
+    margin: 37px 22px 32px 28px;
+    font-family: Muller;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    span {
+      font-family: Muller;
+      font-weight: 700;
+    }
+  }
+  &__dots {
+    display: none;
+  }
+}

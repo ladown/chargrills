@@ -1,0 +1,147 @@
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.price {
+  padding: 76px 105px 103px 97px;
+  background: #eeeeee;
+  &__header {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__subheader {
+    display: block;
+    margin: 0 auto;
+    width: 920px;
+    margin-top: 40px;
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    text-align: center;
+    color: #000000;
+  }
+  &__items {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(409px, auto));
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    width: 409px;
+    background: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.5;
+    &-sale-1 {
+      position: relative;
+      &::after {
+        content: url('../img/price/sale_1.svg');
+        position: absolute;
+        top: 27px;
+        right: -20px;
+      }
+    }
+    &-sale-2 {
+      position: relative;
+      &::after {
+        content: url('../img/price/sale_2.svg');
+        position: absolute;
+        top: 18px;
+        right: 18px;
+      }
+    }
+    &-img {
+      display: block;
+      margin: 0 auto;
+      height: 280px;
+      object-fit: cover;
+    }
+    &-divider {
+      margin-top: 5px;
+    }
+    &-title {
+      margin-top: 20px;
+      font-family: RF Rufo;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 104.5%;
+      text-align: center;
+      color: #f3652e;
+    }
+    &-descr {
+      margin-top: 20px;
+      font-family: Muller;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+    }
+    &-block {
+      display: block;
+      margin: 40px auto;
+      margin-bottom: 25px;
+      max-width: 280px;
+    }
+    &-oldprice {
+      font-family: Muller;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+      text-decoration-line: line-through;
+      color: #898989;
+    }
+    &-newprice {
+      text-align: center;
+      color: #000000;
+      font-family: Muller;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 20px;
+      span {
+        font-family: Muller;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 35px;
+      }
+    }
+    &-btn {
+      display: block;
+      margin: 0px auto;
+      margin-bottom: 56px;
+      width: 280px;
+      height: 65px;
+      background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+      border-radius: 35px;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.fadeOutLeft {
+  animation: fadeOutLeft ease-in-out 0.5s;
+}

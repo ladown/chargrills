@@ -1,0 +1,44 @@
+.catalog {
+  padding: 75px 0px 100px 0px;
+  &__wrapper {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__descr {
+    margin-top: 34px;
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    text-align: center;
+    color: #000000;
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 92px;
+    width: 285px;
+    height: 65px;
+    background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+    border-radius: 50px;
+    border: none;
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    text-align: center;
+    color: #ffffff;
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.questions {
+  padding: 40px 0 40px 0;
+  background: #eeeeee;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(514px, auto));
+    justify-content: center;
+    align-items: center;
+    column-gap: 171px;
+  }
+  &__header {
+    width: 508px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+  }
+  &__subheader {
+    margin-top: 40px;
+    width: 865px;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 157%;
+    color: #000000;
+  }
+  &__btn {
+    margin-top: 65px;
+    width: 366px;
+    height: 65px;
+    background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+    border-radius: 35px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}

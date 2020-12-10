@@ -1,0 +1,44 @@
+.slider {
+  padding: 82px 0 144px 0;
+  &__title {
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    text-align: center;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 65px 854px 65px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+    row-gap: 45px;
+  }
+  &__btn {
+    &-prev {
+      cursor: pointer;
+    }
+    &-next {
+      cursor: pointer;
+    }
+  }
+  &__dots {
+    width: 450px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2 / 3;
+    span {
+      border-radius: 100%;
+      width: 19px;
+      height: 19px;
+      background: #c4c4c4;
+    }
+    .slider__dots-active {
+      background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+    }
+  }
+}
