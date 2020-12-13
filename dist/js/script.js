@@ -1608,7 +1608,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.addEventListener('DOMContentLoaded', function () {
-  // hamburger menu
+  // HAMBURGER MENU
   var hamburgerBtn = document.querySelector(".header__hamburger");
   var headerMenu = document.querySelector(".header__list");
   var menuItem = document.querySelectorAll(".header__link");
@@ -1621,7 +1621,7 @@ window.addEventListener('DOMContentLoaded', function () {
       headerMenu.classList.toggle("header__list_active");
       hamburgerBtn.classList.toggle("header__hamburger_active");
     });
-  }); // slider
+  }); // SLIDER
 
   var firstDots = document.querySelectorAll(".price__circles span");
   var firstSlides = document.querySelectorAll(".price__item");
@@ -1688,6 +1688,17 @@ window.addEventListener('DOMContentLoaded', function () {
     slider(1, firstDots, firstSlides);
     slider(1, secondDots, secondSlides);
     slider(1, thirdDots, thirdSlides);
+  }); // FAQ POPUP
+
+  var faqItem = document.querySelectorAll(".faq__item");
+  var faqBtn = document.querySelectorAll(".faq__item-btn");
+  var faqDescr = document.querySelectorAll(".faq__item-descr");
+  faqBtn.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      faqItem[index].classList.toggle("faq__item-active");
+      btn.classList.toggle("faq__item-btn-minus");
+      faqDescr[index].classList.toggle("faq__item-descr-active");
+    });
   });
 });
 

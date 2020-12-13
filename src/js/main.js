@@ -1,7 +1,7 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
-  // hamburger menu
+  // HAMBURGER MENU
 
   const hamburgerBtn = document.querySelector(`.header__hamburger`);
   const headerMenu = document.querySelector(`.header__list`);
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // slider
+  // SLIDER
 
   const firstDots = document.querySelectorAll(`.price__circles span`);
   const firstSlides = document.querySelectorAll(`.price__item`);
@@ -89,5 +89,19 @@ window.addEventListener('DOMContentLoaded', () => {
     slider(1, firstDots, firstSlides);
     slider(1, secondDots, secondSlides);
     slider(1, thirdDots, thirdSlides);
+  });
+
+  // FAQ POPUP
+
+  const faqItem = document.querySelectorAll(`.faq__item`);
+  const faqBtn = document.querySelectorAll(`.faq__item-btn`);
+  const faqDescr = document.querySelectorAll(`.faq__item-descr`);
+
+  faqBtn.forEach((btn, index) => {
+    btn.addEventListener(`click`, () => {
+      faqItem[index].classList.toggle(`faq__item-active`);
+      btn.classList.toggle(`faq__item-btn-minus`);
+      faqDescr[index].classList.toggle(`faq__item-descr-active`);
+    });
   });
 });
