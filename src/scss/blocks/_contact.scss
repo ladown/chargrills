@@ -1,0 +1,124 @@
+.contact {
+  background: #eeeeee;
+  padding: 60px 200px 85px 200px;
+  &__header {
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__subheader {
+    margin-top: 15px;
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+  }
+  &__form {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1176px;
+    row-gap: 35px;
+    justify-content: center;
+    align-items: center;
+    &-btn {
+      display: block;
+      margin: 0 auto;
+      width: 285px;
+      height: 65px;
+      background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+      border-radius: 50px;
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 157%;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__input {
+    input {
+      width: 1176px;
+      height: 65px;
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 18px 29px 15px 29px;
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      border: none;
+    }
+  }
+  &__textarea {
+    textarea {
+      padding: 19px 27px 10px 27px;
+      width: 1174px;
+      height: 107px;
+      background: #ffffff;
+      border-radius: 15px;
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      border: none;
+      resize: none;
+    }
+  }
+  &__triggers {
+    display: grid;
+    grid-template-columns: 1032px;
+    row-gap: 28px;
+  }
+  &__privacy {
+    position: relative;
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-checkbox {
+      display: none;
+    }
+    &-fake {
+      position: relative;
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      border: none;
+      background: #fff;
+      border-radius: 15px;
+      &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        opacity: 0;
+        transition: 0.5s all;
+      }
+    }
+    &-text {
+      width: 900px;
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+    }
+    &-checkbox:checked + &-fake::before {
+      opacity: 1;
+      background: url('../img/check-regular.svg') center (center/cover) no-repeat;
+    }
+  }
+}

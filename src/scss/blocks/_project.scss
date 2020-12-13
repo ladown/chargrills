@@ -1,0 +1,52 @@
+.project {
+  padding: 88px 265px 100px 180px;
+  background: url('../img/project/project_bg.svg') center (center/cover) no-repeat;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 520px 541px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 75px;
+  }
+  &__descr {
+    &-title {
+      width: 460px;
+      font-family: RF Rufo;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: #000000;
+    }
+    &-com {
+      margin-top: 55px;
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+    }
+    &-list {
+      margin-top: 40px;
+
+      &-item {
+        position: relative;
+        list-style-type: none;
+        font-family: Muller;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        &::before {
+          content: '';
+          position: absolute;
+          left: -20px;
+          top: 6px;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background: #f3652e;
+        }
+      }
+    }
+  }
+}

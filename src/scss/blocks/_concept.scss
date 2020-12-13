@@ -1,0 +1,121 @@
+.concept {
+  background: #eeeeee;
+  padding: 105px 78px 99px 78px;
+  &__header {
+    display: block;
+    margin: 0 auto;
+    width: 685px;
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__subheader {
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 0px;
+    width: 820px;
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157%;
+    text-align: center;
+    color: #000000;
+  }
+  &__items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(437px, auto));
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 65px;
+    &-btn {
+      display: block;
+      margin: 0 auto;
+      grid-column: 1 / 4;
+      width: 297px;
+      height: 65px;
+      left: 802px;
+      background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+      border-radius: 35px;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__item {
+    width: 437px;
+    background: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    &-title {
+      display: block;
+      margin: 0 auto;
+      width: 255px;
+      margin-top: 67px;
+      font-family: RF Rufo;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 104.5%;
+      text-align: center;
+      color: #f3652e;
+    }
+    &-descr {
+      display: block;
+      margin: 0 auto;
+      width: 361px;
+      margin-top: 18px;
+      font-family: RF Rufo;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000000;
+    }
+    &-divider {
+      margin-top: 100px;
+    }
+    &-1 {
+      &::before {
+        content: url('../img/concept/item_1.svg');
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+      }
+    }
+    &-2 {
+      &::before {
+        content: url('../img/concept/item_2.svg');
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+      }
+    }
+    &-3 {
+      &::before {
+        content: url('../img/concept/item_3.svg');
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

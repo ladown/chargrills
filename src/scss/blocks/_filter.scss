@@ -1,0 +1,57 @@
+.filter {
+  padding: 74px 205px 135px 123px;
+  &__header {
+    font-family: RF Rufo;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+  }
+  &__wrapper {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(530px, auto));
+    column-gap: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__photo {
+    position: relative;
+    &::after {
+      content: url('../img/filter/filter_2.svg');
+      position: absolute;
+      width: 131px;
+      height: 131px;
+      bottom: -35px;
+      left: 35px;
+    }
+  }
+  &__descr {
+    width: 530px;
+    &-text {
+      font-family: Muller;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 157%;
+      color: #000000;
+    }
+    &-btn {
+      margin-top: 79px;
+      width: 396px;
+      height: 65px;
+      background: linear-gradient(180deg, #fd8f35 0%, #f2602d 100%);
+      border-radius: 35px;
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
